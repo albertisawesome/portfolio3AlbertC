@@ -6,6 +6,6 @@
 
 
 $("document").ready(function(){
-$(".yeah").css("background-color", "yellow");    
-    
+$(".bob").css("background-color", "gray");    
+$(".sam").css("background-color", "orange");    
 });
