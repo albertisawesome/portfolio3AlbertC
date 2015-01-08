@@ -8,4 +8,10 @@
 $("document").ready(function(){
 $(".bob").css("background-color", "gray");    
 $(".sam").css("background-color", "orange");    
+$('p:last').css({
+    "background-color": "white",
+});
+$('p:first').css({
+    "background-color": "pink",
+});
 });
