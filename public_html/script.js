@@ -9,20 +9,39 @@ $("document").ready(function(){
 $(".bob").css("background-color", "gray");    
 $(".sam").css("background-color", "orange");    
 $('p:last').css({
-    "background-color": "white",
+    "background-color": "yellow"
 });
 $('p:first').css({
-    "background-color": "pink",
- 
+    "background-color": "pink"
+
         
 });
-});
-        
+
+
+
+        //$('')     
+        $('#replaceWText').bind('click', replaceWText);   
+        $('#randPara').bind('click', addAPara);
         $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
         $('h1').bind('click', mouseClick);
         $("h2").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
         $('h2').bind('click', mouseClick);
 
+});
+
+function mouseOutMe(){
+    
+}
+
+function removeAPara(){
+$('#randPara p:last').remove();
+}
+function addAPara(){
+$('#randPara').append('<p>ADDED</p>');
+}
+function replaceWText(){
+$('#replaceWText').text('Replaced!');
+}
 function mouseOverMe(){
     $("h1").html("READ AND LISTEN TO THIS SONG ;D");
 }
@@ -31,7 +50,7 @@ function mouseOverMe(){
     $('h1').html('U MAD?');
 }
 function mouseClick(){
-    $('p').html('THIS IS A EASTER EGG');
+    $('p').html('JUST KIDDING');
     
 }
 
@@ -41,4 +60,9 @@ function mouseOverMe(){
 
 function mouseOverMe(){
     $('h2').html('U NOW HAVE VIRUSES ;)');
+}
+function mouseClick() {
+    $('p').html('JUST KIDDING')
+    
+    
 }
