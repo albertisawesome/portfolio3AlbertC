@@ -26,8 +26,30 @@ $('p:first').css({
         $('h1').bind('click', mouseClick);
         $("h2").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
         $('h2').bind('click', mouseClick);
-
+        $("document").ready(function(){
+        $('#hideLogo').bind('click', hideTheImage);
+        $('#showLogo').bind('click', showTheImage);
+        
 });
+
+function fadeTheImage(){
+    $('#logo').fadeOut(2500);
+}
+
+function fadeALittle(){
+    $('#logo').fadeTo(2500, .30);
+    
+function toggleTheText(){
+    $('h4').toggle(2500);   
+}
+
+function showTheImage(){
+    $('#logo').show('fold')
+}
+
+function hideTheImage(){
+    $('#logo').hide('explode', {}, 2500);
+}
 
 function mouseOutMe(){
     
@@ -63,6 +85,12 @@ function mouseOverMe(){
 }
 function mouseClick() {
     $('p').html('JUST KIDDING')
+    }    
     
-    
-}
+<form action="">
+<button type="button" id="hideLogo">Hide the Logo</button>
+<button type="button" id="showLogo">Show the Logo</button>
+<button type="button" id="fadeLogo">Fade the Logo</button>
+<button type="button" id="fadeALittle">Fade a Little</button>
+        
+</form>
