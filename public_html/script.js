@@ -9,8 +9,8 @@ $("document").ready(function() {
 
 
     $('#woot').accordion({header: "h3"});
-    $(".bob").css("background-color", "gray");
-    $(".sam").css("background-color", "orange");
+    $(".bob").css("background-color", "gold");
+    $(".sam").css("background-color", "skyblue");
     $('p:last').css({
         "background-color": "yellow"
     });
@@ -80,7 +80,7 @@ function mouseOverMe() {
 }
 
 function mouseOverMe() {
-    $('h2').html('U NOW HAVE VIRUSES ;)');
+    $('h2').html('YOU NOW HAVE VIRUSES =D');
 }
 function mouseClick() {
     $('p').html('JUST KIDDING')
