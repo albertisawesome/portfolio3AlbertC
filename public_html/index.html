@@ -1,67 +1,198 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Bob and Sam</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    </head>
-
     <body>
-        <h1>About Me</h1>
-        <div class="bob">
-            <p><p>My name is Albert Chen and I am in the<a href="http://theappacademy.us"> App Academy</a> at Pasadena High School. </p></p>
-            <p>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p>
-            <p>THIS IS<a href="http://ia.media-imdb.com/images/M/MV5BOTU1NDg4MTk2NF5BMl5BanBnXkFtZTcwODAxNjk0OQ@@._V1_SX640_SY720_.jpg"> BOB</a>  </p>
-            <button type="button" id="hideLogo">Hide the Logo</button>
-            <button type="button" id="showLogo">Show the Logo</button>
-            <button type="button" id="fadeLogo">Fade the Logo</button>
-            <button type="button" id="fadeALittle">Fade a Little</button>
-        </div
 
+        <select>
+            <option value="<a href="http://localhost:8383/Portfolio%202%20Albert/index.html">About Me</option>
+            <option value="">Technologies</option>
+            <option value="">Projects</option>
+            <option value="">Java</option>
+        </select>
 
-    </div>
-    <div class="sam">
-
-        <p>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
-        <p>In my free time I like to play video games, read books and manga, and watch movies and Youtube videos.</p></p>
-        <p>THIS IS<a href="http://thumbs.dreamstime.com/z/uncle-sam-cartoon-wants-you-illustration-33238171.jpg"> SAM</a>  </p>
-
-        <div id="woot">
-    <h3> <img src="http://forums.na.leagueoflegends.com/board/attachment.php?attachmentid=810195&d=1382832399"></h3>
-    <p>About Me</p>
-    <h3><img src="http://iads-web.org/wp-content/uploads/2012/10/projects.jpg"></h3>
-    <p>Projects</p>
-    <h3><img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Chrome_Logo.svg/1024px-Chrome_Logo.svg.png"></h3>
-    <p>Technologies</p>
-</div>
-       
-    </div>        
-    <div> 
-        <p id="replaceWText">HI</p>
-        <p id="removePara">BYE</p>
-        <p id="hide">WHY</p>
-        <p id="logo"><style>body{background-image: url('');}</style></p>
-    
-    <p id="randPara">ADDED</p>
-</div>
-<h1>                                                     </h1>
-<h1>    ▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬﻿
-
-    ▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬                                               </h1>
-<h2>GET OFF MY LAWN▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬></h2>
-<h3>^CLICK HERE^                                         </h3>
-
-
-<script type="text/javascript" src="script.js"></script>
-
-</body>
+    </body>
 </html>
 
+<script>
+    function goToPage(url)
+    {
+    if (url != "")
+    {
+    .open(url);
+    }
+    }
+</script>
+
+<form>
+    <label><u>S</u>earch Engines</label>
+    <select accesskey="S" onchange="goToPage(this.options(this.selectedIndex).value)">
+        <option selected>Please select one</option>
+        <option value="http://search.msn.com/">MSN Search</option>
+        <option value="http://www.google.com/">Google</option>
+        <option value="http://www.search.com/">Search.com</option>
+        <option value="http://www.dogpile.com/">Dogpile</option>
+    </select>
+    form>
+
+    <script>
+                function goToNewPage(dropdownlist)
+                {
+                var url = dropdownlist.options(dropdownlist.selectedIndex).value;
+                        if (url != "")
+                {
+                window.open(url);
+                }
+                }
+    </script>
+    <form name="dropdown">
+        <label>Search <u>E</u>ngines</label>
+        <select name="list" accesskey="E">
+            <option selected>Please select one</option>
+            <option value="http://search.msn.com/">MSN Search</option>
+            <option value="http://www.google.com/">Google</option>
+            <option value="http://www.search.com/">Search.com</option>
+            <option value="http://www.dogpile.com/">Dogpile</option>
+            <select>
+                <input type=button value="Go" onclick="goToNewPage(document.dropdown.list)">
+                </form><html>
+                    <head>      <!-- Comment --!> My title and page.
+                        <title>Portfolio 2 About Me</title>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <link type="/css" rel="stylesheet" href="css/bootstrap-theme.css">
+                        <link type="/css" rel="stylesheet" href="css/bootstrap.css">
+                        <link type="/css" rel="stylesheet" href="css/custom-style.css">
+                    </head>
+                    <body>
+                        <div class="btn-group-vertical">
+                  ...
+                </div>
+                        <div class="container">
+                            <h1>About Me</h1>
+                            <div class="row">
+                                <p>My name is Albert Chen and I am in the<a href="http://theappacademy.us"> App Academy</a> at Pasadena High School. </p>
+                                <p>In my free time I like to play video games, read books and manga, and watch movies and Youtube videos.</p>
+                                <style>body{background-image: url('http://www.hd-wallpapers9.com/gallery/Hd/City%20Background%20Walpapers/City%20Background%20Walpapers-017.jpeg');}</style>
+                                
+                                
+                                
+                        <!-- Comments --!> My carousel.
+                                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="leagueoflegends.jpg" alt="League of Legends">
+                        </div>
+                        <div class="item">
+                            <img src="chinesefood.jpg" alt="chinese food">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                    </div>  
+                    <iframe width="640" height="480" src="//www.youtube.com/embed/-8Ipi_YUbik" frameborder="0" allowfullscreen></iframe>
+                    <div class="col-xs-10">
+                        <p> </p>
+                        <div class="row"></div>
+                        <p></p>
+                        <div class="col-xs-9"></div>
+                        <div class="col-xs-3"></div>
+                        <div class="row"></div>
+                        <p></p>
+                        <nav class="list-group">
+                            <a class="list-group-item" href="index.html">About Me</a>
+                            <a class="list-group-item" href="projects.html">Projects</a>
+                            <a class="list-group-item" href="technologies.html">Technologies</a>
+                        </nav>
+
+
+                    </div>
+
+                    <!-- Comment --> This  is the script for Java.
+                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                    <script type="text/Javascript" src="js/bootstrap.min.js"></script>
+                    </body>
+
+                </html>
+
+
+
+                <!DOCTYPE html>
+                <html>
+                    <body>
+
+                        <select>
+                            <option value="<a href="http://localhost:8383/Portfolio%202%20Albert/index.html">About Me</option>
+                            <option value="">Technologies</option>
+                            <option value="">Projects</option>
+                            <option value="">Java</option>
+                            <option vavlue="">Jquery</option>
+                        </select>
+                        <a href="projects.html">Projects</a> 
+                        <a href="technologies.html">Technology</a> <a href="jquery.html">Jquery</a>
+                        </nav>  
+                    </body>
+                </html>
+
+                <script>
+                            function goToPage(url)
+                            {
+                            if (url != "")
+                            {
+                            .open(url);
+                            }
+                            }
+                </script>
+
+                <form>
+                    <label><u>S</u>earch Engines</label>
+                    <select accesskey="S" onchange="goToPage(this.options(this.selectedIndex).value)">
+                        <option selected>Please select one</option>
+                        <option value="http://search.msn.com/">MSN Search</option>
+                        <option value="http://www.google.com/">Google</option>
+                        <option value="http://www.search.com/">Search.com</option>
+                        <option value="http://www.dogpile.com/">Dogpile</option>
+                    </select>
+                    form>
+
+                    <script>
+                                function goToNewPage(dropdownlist)
+                                {
+                                var url = dropdownlist.options(dropdownlist.selectedIndex).value;
+                                        if (url != "")
+                                {
+                                window.open(url);
+                                }
+                                }
+                    </script>
+                    <form name="dropdown">
+                        <label>Search <u>E</u>ngines</label>
+                        <select name="list" accesskey="E">
+                            <option selected>Please select one</option>
+                            <option value="http://search.msn.com/">MSN Search</option>
+                            <option value="http://www.google.com/">Google</option>
+                            <option value="http://www.search.com/">Search.com</option>
+                            <option value="http://www.dogpile.com/">Dogpile</option>
+                            <select>
+                                <input type=button value="Go" onclick="goToNewPage(document.dropdown.list)">
+                                </form>
