@@ -83,7 +83,7 @@ function mouseOverMe() {
     $('h2').html('YOU NOW HAVE VIRUSES =D');
 }
 function mouseClick() {
-    $('p').html('JUST KIDDING')
+    $('p').html('<img src="http://media.arexworks.com/tf/am_rampus/img/css3_html5_jquery_bootstrap.png">')
 
 }
 
